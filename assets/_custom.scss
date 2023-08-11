@@ -584,6 +584,7 @@ body:has(#menu-control:checked) {
   margin-bottom: 20px;
 
   img {
+    max-width: 240px;
     @media (max-width: $mobile-breakpoint) {
       max-width: 200px;
     }
