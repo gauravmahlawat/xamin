@@ -505,7 +505,7 @@ body:has(#menu-control:checked) {
 
   &::before {
     z-index: 0;
-    content: "";
+    content: '';
     filter: grayscale(1);
     height: 100%;
     width: 100%;
