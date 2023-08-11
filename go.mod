@@ -1,4 +1,4 @@
-module github.com/axelerant/engg-handbook
+module github.com/gauravmahlawat/xamin
 
 go 1.19
 

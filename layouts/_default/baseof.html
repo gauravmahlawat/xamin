@@ -8,7 +8,7 @@
     {{ partial "docs/inject/head" . }}
     <script defer src="{{ "./footer.js" | relURL }}"></script>
   </head>
-  <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+  <body {{ if .IsHome }} class="homepage"{{ end }} dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
     <input type="checkbox" class="hidden toggle" id="menu-control" />
     <input type="checkbox" class="hidden toggle" id="toc-control" />
     {{ partial "docs/desktop-header" . }}
@@ -16,6 +16,7 @@
       {{ partial "docs/banner" . }}
     {{ end }}
     <main class="container flex">
+      {{ if not .IsHome }} 
       <aside class="book-menu">
         <div class="book-menu-content">
           <label for="menu-control" class="menu-close">
@@ -30,6 +31,7 @@
           <!-- Left menu Content -->
         </div>
       </aside>
+      {{ end }}
 
       <div class="book-page">
         <header class="book-header">
@@ -43,11 +45,13 @@
         {{ partial "docs/inject/content-after" . }}
 
 
+        {{ if not .IsHome }} 
         <footer class="book-footer">
           {{ template "footer" . }}
           <!-- Footer under page content -->
           {{ partial "docs/inject/footer" . }}
         </footer>
+        {{ end }}
 
         {{ template "comments" . }}
         <!-- Comments block -->
@@ -55,6 +59,7 @@
         <label for="menu-control" class="hidden book-menu-overlay"></label>
       </div>
 
+      {{ if not .IsHome }} 
       {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
         <aside class="book-toc">
           <div class="book-toc-content">
@@ -62,6 +67,7 @@
             <!-- Table of Contents -->
           </div>
         </aside>
+      {{ end }}
       {{ end }}
     </main>
 
