@@ -1,0 +1,20 @@
+{
+  "name": "xamin",
+  "version": "1.0.0",
+  "repository": "https://github.com/axelerant/engg-handbook.git",
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "lint-fix:md": "markdownlint {content,archetypes}/**/*.md --fix --ignore node_modules",
+    "lint-fix:prettier": "prettier --write {layouts,content,assets,archetypes}/**/*",
+    "lint:md": "markdownlint {content,archetypes}/**/*.md --ignore node_modules",
+    "lint:prettier": "prettier --check {layouts,content,assets,archetypes}/**/*",
+    "lint": "concurrently npm:lint:*",
+    "lint-fix": "concurrently npm:lint-fix:*"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "markdownlint-cli": "^0.32.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html
+  lang="{{ default .Site.Language.Lang .Site.LanguageCode }}"
+  dir="{{ default "ltr" .Site.Language.LanguageDirection }}"
+>
+  <head>
+    {{ partial "docs/html-head" . }}
+    {{ partial "docs/inject/head" . }}
+    <script defer src="{{ "./footer.js" | relURL }}"></script>
+  </head>
+  <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+    <input type="checkbox" class="hidden toggle" id="menu-control" />
+    <input type="checkbox" class="hidden toggle" id="toc-control" />
+    {{ partial "docs/desktop-header" . }}
+    {{ if .IsHome }}
+      {{ partial "docs/banner" . }}
+    {{ end }}
+    <main class="container flex">
+      <aside class="book-menu">
+        <div class="book-menu-content">
+          <label for="menu-control" class="menu-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                fill="white"
+                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+              />
+            </svg>
+          </label>
+          {{ template "menu" . }}
+          <!-- Left menu Content -->
+        </div>
+      </aside>
+
+      <div class="book-page">
+        <header class="book-header">
+          {{ template "header" . }}
+          <!-- Mobile layout header -->
+        </header>
+
+        {{ partial "docs/inject/content-before" . }}
+        {{ template "main" . }}
+        <!-- Page Content -->
+        {{ partial "docs/inject/content-after" . }}
+
+
+        <footer class="book-footer">
+          {{ template "footer" . }}
+          <!-- Footer under page content -->
+          {{ partial "docs/inject/footer" . }}
+        </footer>
+
+        {{ template "comments" . }}
+        <!-- Comments block -->
+
+        <label for="menu-control" class="hidden book-menu-overlay"></label>
+      </div>
+
+      {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+        <aside class="book-toc">
+          <div class="book-toc-content">
+            {{ template "toc" . }}
+            <!-- Table of Contents -->
+          </div>
+        </aside>
+      {{ end }}
+    </main>
+
+    <!--Footer bottom containing navigation links-->
+    <footer class="footer">
+      {{ partial "docs/footer-navigation" . }}
+    </footer>
+
+    {{ partial "docs/inject/body" . }}
+  </body>
+</html>
+
+{{ define "menu" }}
+  {{ partial "docs/menu" . }}
+{{ end }}
+
+{{ define "header" }}
+  {{ partial "docs/header" . }}
+
+  {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+    <aside class="hidden clearfix">
+      {{ template "toc" . }}
+    </aside>
+  {{ end }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "docs/footer" . }}
+{{ end }}
+
+{{ define "comments" }}
+  {{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
+    <div class="book-comments">
+      {{- partial "docs/comments" . -}}
+    </div>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{ if .IsHome }}
+    <div class="desktop-banner">{{ partial "docs/banner" . }}</div>
+  {{ end }}
+  <article class="markdown">
+    {{- .Content -}}
+  </article>
+{{ end }}
+
+{{ define "toc" }}
+  {{ partial "docs/toc" . }}
+{{ end }}
