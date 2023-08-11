@@ -1,9 +1,19 @@
 # Local development
+```
+git clone
+```
 
-git clone 
+```
 hugo mod get -u
+```
+```
 hugo server -D
+```
 
 # yarn linting
+```
 yarn
+```
+```
 yarn lint:md
+```
