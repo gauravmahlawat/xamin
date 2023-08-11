@@ -583,6 +583,12 @@ body:has(#menu-control:checked) {
 .book-header {
   margin-bottom: 20px;
 
+  img {
+    @media (max-width: $mobile-breakpoint) {
+      max-width: 200px;
+    }
+  }
+
   img.book-icon {
     all: unset;
   }
