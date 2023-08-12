@@ -72,36 +72,8 @@ shuffle_questions: true
 {{< /quizdown >}}
 
 {{< rawhtml >}}
-<div id="timer-container">
-  <button id="start-button">Start Timer</button>
-  <div id="timer">00:00</div>
-</div>
 
-<script>
-  var timer;
-  var startTime;
-
-  document.getElementById("start-button").addEventListener("click", function() {
-    if (!startTime) {
-      startTime = new Date().getTime();
-      timer = setInterval(updateTimer, 1000);
-    }
-  });
-
-  function updateTimer() {
-    var currentTime = new Date().getTime();
-    var elapsedTime = currentTime - startTime;
-
-    var minutes = Math.floor(elapsedTime / (1000 * 60));
-    var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
-
-    document.getElementById("timer").textContent = ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
-  }
-</script>
-
-     <script 
-     src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js"> </script>
   <script 
       src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownKatex.js">
   </script>

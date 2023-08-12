@@ -839,6 +839,11 @@ aside nav ul li {
         overflow: hidden;
         padding: 20px 10px;
         position: relative;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+        }
       }
 
       .cr_title {
@@ -856,6 +861,14 @@ aside nav ul li {
         display: inline-block;
         width: 100%;
         padding: 21px 20px 26px;
+
+        h3 {
+          padding: 0;
+          margin: 0;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+        }
       }
     }
 }
@@ -948,4 +961,21 @@ section.block {
       margin-top: 15px;
     }
   }
+}
+
+.mobile-padding-0 {
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0;
+  }
+}
+
+.book-page h2 {
+  margin-bottom: 30px;
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 20px;
+  }
+}
+
+.h1-icon {
+  max-width: 210px;
 }

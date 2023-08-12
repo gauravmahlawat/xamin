@@ -12,25 +12,10 @@
     <input type="checkbox" class="hidden toggle" id="menu-control" />
     <input type="checkbox" class="hidden toggle" id="toc-control" />
     {{ partial "docs/desktop-header" . }}
-    {{ if .IsHome }}
+    <!-- {{ if .IsHome }} -->
       {{ partial "docs/banner" . }}
-    {{ end }}
-    <main class="container {{ if not .IsHome }} flex {{ end }}">
-
-      <!-- Test series block for homepage -->
-      {{ if .IsHome }} 
-        <section class="block">
-          {{ partial "docs/test-series" . }}
-        </section>
-
-        <section class="block">
-          {{ partial "docs/top-categories" . }}
-        </section>
-
-        <section class="block">
-          {{ partial "docs/our-services" . }}
-        </section>
-      {{ end }}
+    <!-- {{ end }} -->
+    <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
 
       {{ if not .IsHome }} 
       <aside class="book-menu">
@@ -49,17 +34,33 @@
       </aside>
       {{ end }}
 
-      {{ if not .IsHome }} 
       <div class="book-page">
         <header class="book-header">
           {{ template "header" . }}
           <!-- Mobile layout header -->
         </header>
+        {{ if not .IsHome }} 
 
         {{ partial "docs/inject/content-before" . }}
         {{ template "main" . }}
         <!-- Page Content -->
         {{ partial "docs/inject/content-after" . }}
+        {{ end }}
+
+      <!-- Test series block for homepage -->
+      {{ if .IsHome }} 
+      <section class="block">
+        {{ partial "docs/test-series" . }}
+      </section>
+
+      <section class="block">
+        {{ partial "docs/top-categories" . }}
+      </section>
+
+      <section class="block">
+        {{ partial "docs/our-services" . }}
+      </section>
+      {{ end }}
 
 
         {{ if not .IsHome }} 
@@ -75,7 +76,6 @@
 
         <label for="menu-control" class="hidden book-menu-overlay"></label>
       </div>
-      {{ end }}
 
       {{ if not .IsHome }} 
       {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
