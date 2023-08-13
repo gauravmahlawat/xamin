@@ -6,6 +6,9 @@
   <head>
     {{ partial "docs/html-head" . }}
     {{ partial "docs/inject/head" . }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta name="robots" content="index, follow">
+
     <script defer src="{{ "./footer.js" | relURL }}"></script>
   </head>
   <body {{ if .IsHome }} class="homepage"{{ end }} dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
