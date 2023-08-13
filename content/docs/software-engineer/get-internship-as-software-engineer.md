@@ -38,7 +38,8 @@ tags: ["technology", "programming", software development, engineering]
 
 # The Ultimate Guide to Securing a Job or Internship in Software Engineering
 
-![internship](/images/internship.webp)
+![internship](../../../images/internship.webp)
+
 
 Let's break down the process of searching for a job into four distinct stages:
 
