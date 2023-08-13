@@ -543,15 +543,15 @@ body:has(#menu-control:checked) {
   &::before {
     z-index: 0;
     content: '';
-    filter: grayscale(1);
+    bottom: 0;
+    background-image: linear-gradient(to top,#000,transparent);
+    opacity: 0.7;
     height: 100%;
     width: 100%;
-    position: absolute;
-    left: 0;
     right: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.4);
     bottom: 0;
+    left: 0;
+    position: absolute;
   }
 
   @media (min-width: $tablet-breakpoint) {
@@ -591,23 +591,48 @@ body:has(#menu-control:checked) {
   margin-right: auto;
 }
 
-.banner__text h1 {
-  background-color: white;
-  font-size: 64px;
-  display: inline;
-  font-weight: bold;
+.banner__text {
+  h1 {
+    font-size: 54px;
+    display: inline;
+    font-weight: bold;
+    padding-inline: 12px;
+    padding-block: 20px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: $white;
+  }
+
+  p {
+    font-size: 18px;
+    padding-inline: 12px;
+    padding-block: 0 20px;
+    display: inline-block;
+    margin: 0;
+    color: $white;
+  }
+
+  a {
+    color: $white;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: underline;
+    margin-left: 2px;
+    font-weight: 500;
+
+    img {
+      width: 14px;
+    }
+  }
 }
 
-.banner__text span {
+/* .banner__text span {
   color: #fc4c02;
-}
+} */
 
 .banner__text {
   position: relative;
-  width: 50%;
-  padding-left: 82px;
-  height: 400px;
-  top: 80px;
+  top: 90px;
   line-height: 1;
 }
 
@@ -826,6 +851,10 @@ aside nav ul li {
       cursor: pointer;
       position: relative;
       max-width: calc(25% - 0.75rem);
+
+      .cr_title a {
+        color: $white;
+      }
 
       @media (max-width: $tablet-breakpoint) {
         max-width: calc(50% - 1rem)

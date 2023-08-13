@@ -7,6 +7,9 @@
     {{ partial "docs/html-head" . }}
     {{ partial "docs/inject/head" . }}
     <link rel="canonical" href="{{ .Permalink }}">
+    {{ if .Params.keywords }}
+      <meta name="keywords" content="{{ .Params.keywords }}">
+    {{ end }}
     <meta name="robots" content="index, follow">
 
     <script defer src="{{ "./footer.js" | relURL }}"></script>
@@ -55,13 +58,12 @@
         {{ partial "docs/trending" . }}
       </section>
 
+      <section class="block">
+        {{ partial "docs/top-categories" . }}
+      </section>
     
       <section class="block">
         {{ partial "docs/test-series" . }}
-      </section>
-
-      <section class="block">
-        {{ partial "docs/top-categories" . }}
       </section>
 
       <section class="block">

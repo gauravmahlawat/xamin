@@ -1,69 +1,20 @@
 
 <div class="test-series__block">
-    <h2>Test Series</h2>
-
-
+    <h2>Trending Topics</h2>
     <div class="quiz-wrappar">
-        <div class="first_display">
-            <a href="/#">
-            <div class="courseimgmain" >
-                <h3 class="cr_title hidden-xs">Current Affair</h3>
+        {{ range first 4 .Data.Pages.ByDate }}
+            <div class="first_display">
+                <div class="courseimgmain" >
+                    <h3 class="cr_title hidden-xs"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                </div>
+                <div class="coursedetails">
+                        <p class="coursetitle">{{ .Summary }}</p>
+                        <a class="btn btn--primary" href="{{ .Permalink }}" data-text="VIEW DETAILS">
+                            <span class="button__inner-rollover-text">VIEW DETAILS</span>
+                        </a>
+                </div>
             </div>
-            <div class="coursedetails">
-                <h3 class="coursetitle" title="Current Affairs Quiz with Latest Current affairs Question & Answers for preparation">
-                    Current Affairs Quiz with Latest Current affairs Question & Answers for preparation</h3>
-                    <a class="btn btn--primary" href="#" data-text="VIEW DETAILS">
-                        <span class="button__inner-rollover-text">VIEW DETAILS</span>
-                    </a>
-            </div>
-            </a>
-        </div>
-
-        <div class="first_display">
-            <a href="/#">
-            <div class="courseimgmain" >
-                <h3 class="cr_title hidden-xs">Current Affair</h3>
-            </div>
-            <div class="coursedetails">
-                <h3 class="coursetitle" title="Current Affairs Quiz with Latest Current affairs Question & Answers for preparation">
-                    Current Affairs Quiz with Latest Current affairs Question & Answers for preparation</h3>
-                    <a class="btn btn--primary" href="#" data-text="VIEW DETAILS">
-                        <span class="button__inner-rollover-text">VIEW DETAILS</span>
-                    </a>
-            </div>
-            </a>
-        </div>
-
-        <div class="first_display">
-            <a href="/#">
-            <div class="courseimgmain" >
-                <h3 class="cr_title hidden-xs">Current Affair</h3>
-            </div>
-            <div class="coursedetails">
-                <h3 class="coursetitle" title="Current Affairs Quiz with Latest Current affairs Question & Answers for preparation">
-                    Current Affairs Quiz with Latest Current affairs Question & Answers for preparation</h3>
-                    <a class="btn btn--primary" href="#" data-text="VIEW DETAILS">
-                        <span class="button__inner-rollover-text">VIEW DETAILS</span>
-                    </a>
-            </div>
-            </a>
-        </div>
-
-        <div class="first_display">
-            <a href="/#">
-            <div class="courseimgmain" >
-                <h3 class="cr_title hidden-xs">Current Affair</h3>
-            </div>
-            <div class="coursedetails">
-                <h3 class="coursetitle" title="Current Affairs Quiz with Latest Current affairs Question & Answers for preparation">
-                    Current Affairs Quiz with Latest Current affairs Question & Answers for preparation</h3>
-                    <a class="btn btn--primary" href="#" data-text="VIEW DETAILS">
-                        <span class="button__inner-rollover-text">VIEW DETAILS</span>
-                    </a>
-            </div>
-            </a>
-        </div>
+        {{ end }}
     </div>
-
 
 </div>
