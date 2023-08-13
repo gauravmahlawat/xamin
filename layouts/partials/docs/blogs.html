@@ -1,34 +1,25 @@
-<h2>Top blogs</h2>
+<h2>Featured blogs</h2>
 <div class="blog-tile__wrapper">
-    <div class="blog-tile">
-        <div class="blog-tile__picture">
-            <img src="{{ "images/blog.webp" | relURL }}" alt="blog">
-        </div>
-        <h3>title of the blogtitle of the blogtitle of the blog</h3>
-        <a href="{{ "docs" | relURL }}" data-text="read more" class="btn btn--primary">
-            <span class="button__inner-rollover-text">read more</span>
-        </a>
-    </div>
 
-    <div class="blog-tile">
-        <div class="blog-tile__picture">
-            <img src="{{ "images/blog.webp" | relURL }}" alt="blog">
-        </div>
-        <h3>title of the blogtitle of the blogtitle of the blog</h3>
-        <a href="{{ "docs" | relURL }}" data-text="read more" class="btn btn--primary">
-            <span class="button__inner-rollover-text">read more</span>
-        </a>
-    </div>
+    {{ range .Site.RegularPages.ByDate.Reverse }}
+    {{ $count := 0 }}
+        {{ if and (eq (.Params.featured | default "no") "yes") }}
+        {{ if lt $count 3 }}
+        {{ $count = add $count 1 }}
+            <div class="blog-tile">
+                <div class="blog-tile__picture">
+                    <img src="{{ "images/blog.webp" | relURL }}" alt="blog">
+                </div>
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="publish-date">{{ .Date.Format "January 2, 2006" }}</p>
+                <a href="{{ .Permalink }}" data-text="read more" class="btn btn--primary">
+                    <span class="button__inner-rollover-text">read more</span>
+                </a>
+            </div>
+        {{ end }}
+        {{ end }}
+    {{ end }}
 
-    <div class="blog-tile">
-        <div class="blog-tile__picture">
-            <img src="{{ "images/blog.webp" | relURL }}" alt="blog">
-        </div>
-        <h3>title of the blogtitle of the blogtitle of the blog</h3>
-        <a href="{{ "docs" | relURL }}" data-text="read more" class="btn btn--primary">
-            <span class="button__inner-rollover-text">read more</span>
-        </a>
-    </div>
     <div class="blog-tile moreblogsec blog-show-more">
         <h3 class="title">Blog Posts</h3>
         <span class="text">Check out our blog for free insights and updates on your field</span>

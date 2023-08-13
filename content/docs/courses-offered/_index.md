@@ -3,6 +3,7 @@ title: "Services Offered"
 weight: 1
 keywords: 'testing keyword, more key'
 bookCollapseSection: true
+featured: 'yes'
 ---
 
 <!-- {{< blockquote author="Ray Dalio" quote="Principles are ways of successfully dealing with reality to get what you want out of life." >}} -->

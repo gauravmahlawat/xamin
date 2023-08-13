@@ -2,6 +2,7 @@
 title: "Government Exam Preparation"
 weight: 2
 description: test
+featured: 'yes'
 ---
 
 # Government Exam Preparation
