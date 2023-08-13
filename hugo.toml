@@ -2,9 +2,10 @@ languageCode = 'en-us'
 title = 'Xamin'
 theme = 'github.com/alex-shpak/hugo-book'
 enableGitInfo = true
+enableRobotsTXT = true
 
 [params]
-    BookRepo = 'https://github.com/axelerant/engg-handbook'
+    BookRepo = 'https://github.com/gauravmahlawat/xamin'
     BookEditPath = 'edit/main'
 
 [module]
