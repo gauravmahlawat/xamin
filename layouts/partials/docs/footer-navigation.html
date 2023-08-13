@@ -2,11 +2,11 @@
   <div class="footer-primary">
     <div class="footer-navigation ">
       <div class="menu-wrapper">
-        <ul role="menu" class="footer-menu">
-          <li class="menu-items-wrapper">
+        <ul role="menubar" class="footer-menu">
+          <li class="menu-items-wrapper" role="menu">
             <div class="menu-icons-wrapper">
               <h2>Company</h2>
-              <span class="plus">
+              <button class="plus" aria-label="plus icon">
                 <svg
                   width="13"
                   height="29"
@@ -19,8 +19,8 @@
                     fill="white"
                   />
                 </svg>
-              </span>
-              <span class="minus">
+              </button>
+              <button class="minus" aria-label="minus icon">
                 <svg
                   width="13"
                   height="29"
@@ -30,26 +30,26 @@
                 >
                   <path d="M9.56 2.352H0.92V0.816H9.56V2.352Z" fill="white" />
                 </svg>
-              </span>
+              </button>
             </div>
 
-            <ul class="menu-items">
-              <li class="menu-item">
+            <ul class="menu-items" role="menu">
+              <li class="menu-item" role="menuitem">
                 <a title="about us" href="{{ "about-us" | relURL }}">About Us</a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" role="menuitem">
                 <a title="principles" href="{{ "principles" | relURL }}">Principles</a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" role="menuitem">
                 <a title="faq" href="{{ "faq" | relURL }}">FAQ</a>
               </li>
             </ul>
           </li>
 
-          <li class="menu-items-wrapper">
+          <li class="menu-items-wrapper" role="menu">
             <div class="menu-icons-wrapper">
               <h2>Solutions</h2>
-              <span class="plus">
+              <button class="plus" aria-label="plus icon">
                 <svg
                   width="13"
                   height="29"
@@ -62,8 +62,8 @@
                     fill="white"
                   />
                 </svg>
-              </span>
-              <span class="minus">
+              </button>
+              <span class="minus" aria-label="minus icon">
                 <svg
                   width="13"
                   height="29"
@@ -76,15 +76,15 @@
               </span>
             </div>
 
-            <ul class="menu-items">
-              <li class="menu-item">
+            <ul class="menu-items" role="menu">
+              <li class="menu-item" role="menuitem">
                 <a title="course offered" href="{{ "docs/courses-offered/" | relURL }}">Services Offered</a
                 >
               </li>
-              <li class="menu-item">
+              <li class="menu-item" role="menuitem">
                 <a title="Govt Exams" href="{{ "docs/courses-offered/government-exam-preparation/" | relURL  }}">Govt Exams</a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" role="menuitem">
                 <a title="Blogs" href="{{ "docs" | relURL }}">Blogs</a>
               </li>
             </ul>
@@ -93,7 +93,7 @@
           <li class="join-us menu-items-wrapper">
             <div class="menu-icons-wrapper">
               <h2 class="contact-heading">Contact Us</h2>
-              <span class="plus">
+              <button class="plus" aria-label="plus icon">
                 <svg
                   width="13"
                   height="29"
@@ -106,8 +106,8 @@
                     fill="white"
                   />
                 </svg>
-              </span>
-              <span class="minus">
+              </button>
+              <button class="minus" aria-label="minus icon">
                 <svg
                   width="13"
                   height="29"
@@ -117,20 +117,20 @@
                 >
                   <path d="M9.56 2.352H0.92V0.816H9.56V2.352Z" fill="white" />
                 </svg>
-              </span>
+              </button>
             </div>
-            <div class="menu-item">
+            <!-- <li class="menu-item" role="menuitem">
               <a href="#">
                 <div class="header__search">
                   <div class="content"></div>
                 </div>
               </a>
-            </div>
-            <ul class="menu-items">
-              <li class="menu-item">
+            </li> -->
+            <ul class="menu-items" role="menu">
+              <li class="menu-item" role="menuitem">
                 <a title="contact" href="{{ "contact" | relURL }}">Contact</a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" role="menuitem">
                 <a href="mailto:gauravmahlawat@gmail.com">Email id</a>
               </li>
             </ul>

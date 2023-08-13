@@ -193,10 +193,24 @@ body {
 
   .plus {
     display: block;
+    background: unset;
+    border: unset;
+    padding: 0;
+    font-size: unset;
+    height: unset;
+    line-height: unset;
+    max-height: 20px;
   }
 
   .minus {
     display: none;
+    background: unset;
+    border: unset;
+    padding: 0;
+    font-size: unset;
+    height: unset;
+    line-height: unset;
+    max-height: 20px;
   }
 
   .social-block {
@@ -868,6 +882,7 @@ aside nav ul li {
           font-weight: 500;
           font-size: 18px;
           line-height: 24px;
+          color: #000;
         }
       }
     }
@@ -887,14 +902,28 @@ section.block {
   justify-content: center;
 
   li {
-    width: 20%;
-    max-width: calc(20% - 10px);
-    height: 140px;
-    border-radius: 2px;
-    box-shadow: 0 4px 15px 1px rgba(0,0,0,0.15);
-    background-color: #ffffff;
+    width: 25%;
+    max-width: calc(25% - 10px);
+    height: 164px;
     cursor: pointer;
     transition: all 0.3s;
+
+    .top_category_link {
+      position: relative;
+      border-radius: 8px;
+      background-color: $orange;
+
+      img {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     @media (max-width: $mobile-breakpoint) {
       max-width: 100%;
@@ -903,12 +932,8 @@ section.block {
 
     a {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
       height: 100%;
-      text-align: center;
-      color: #000000;
+      color: #fff;
       padding: 24px 15px 30px;
 
       img {
@@ -922,8 +947,9 @@ section.block {
         font-weight: 600;
         line-height: 1.33;
         letter-spacing: normal;
-        color: #404040;
+        color: #fff;
         margin-bottom: 0;
+        z-index: 1;
       }
     }
   }
@@ -978,4 +1004,314 @@ section.block {
 
 .h1-icon {
   max-width: 210px;
+}
+
+.trending-card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .card-wrapper {
+    width: 100%;
+    max-width: calc(25% - .75rem);
+
+    @media (max-width: $mobile-breakpoint) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &:hover {
+      .card-body.card-body-overlay {
+        margin-top: -10px;
+      }
+
+      .card .card-img-wrapper .overlay {
+        opacity: 1;
+        background-color: rgba($orange, 0.8);
+      }
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+
+      .card-body-container {
+        color: #000;
+      }
+
+      .label {
+        margin: 0 0 10px 0;
+      }
+
+      .card-text {
+        margin-bottom: 0;
+      }
+
+      .btn--secondary {
+        height: 44px;
+        white-space: nowrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 0;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s ease-in-out;
+        border: solid 2px #fff;
+        background: transparent;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+
+        .button__inner-rollover-text {
+          padding: 11px 53px;
+          letter-spacing: 0.8px;
+          transition: transform 0.4s;
+          display: block;
+          transition-timing-function: cubic-bezier(0.75,0,0.125,1);
+        }
+      }
+
+      .card-body-overlay {
+        padding: 16px 16px 32px 16px;
+        flex: none;
+        height: auto;
+        margin-top: -22px;
+        background-color: #fff;
+        transition: 0.4s ease;
+        margin-right: 22px;
+        overflow: hidden;
+        box-shadow: 0 0 20px 0 rgba(0,0,10,0.05);
+        z-index: 9;
+        position: relative;
+      }
+
+      .card-img-wrapper {
+        position: relative;
+        display: flex;
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .4s ease;
+          background-color: $orange;
+        }
+
+        img {
+          transition: 0.4s ease;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.btn--secondary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0;
+  transform: translate(-50%,-50%);
+  transition: all 0.3s ease-in-out;
+  border: solid 2px #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 500;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    background: #fff;
+    transform: translate3d(-100%,0,0);
+    box-sizing: border-box;
+    padding: 12px 53px 11px 53px;
+    transition-timing-function: cubic-bezier(0.75,0,0.125,1);
+    color: $orange;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &:hover {
+    &::before {
+      transform: translate3d(0,0,0);
+    }
+  }
+}
+
+.btn--primary {
+  border: solid 2px $orange;
+  background-color: #fff;
+  color: $orange;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-size: 11.5px;
+  margin-top: 8px;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  padding-block: 8px;
+  font-weight: 600;
+  font-size: 12px;
+
+  span {
+    padding: 8px 21px;
+    letter-spacing: 0.7px;
+  }
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    background: $orange;
+    transform: translate3d(-100%,0,0);
+    box-sizing: border-box;
+    padding: 8px 9px;
+    transition-timing-function: cubic-bezier(0.75,0,0.125,1);
+    padding: 8px 21px;
+    letter-spacing: 0.7px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  &:hover {
+    &::before {
+      transform: translate3d(0,0,0);
+    }
+  }
+}
+
+.blog-tile {
+  width: 100%;
+  max-width: calc(25% - .75rem);
+
+  @media (max-width: $mobile-breakpoint) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: #000000;
+    display: inline-block;
+    width: 100%;
+    line-height: inherit;
+    font-weight: 500;
+    padding-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .title {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.book-search {
+  @media (max-width: $mobile-breakpoint) {
+    margin-top: 42px;
+  }
+}
+
+.services-banner {
+  width: 100%;
+  max-width: calc(33.3% - .7rem);
+  display: inline-flex;
+  background: #ffffff;
+  height: 90px;
+  border-radius: 2px;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.15);
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 35px;
+  width: 100%;
+  margin-top: -45px;
+  z-index: 1;
+  color: #000;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+
+  .knowmoretxt {
+    display: flex;
+    align-items: center;
+    color: $orange;
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+.homepage {
+  aside.book-menu {
+    display: none;
+  }
+}
+
+#menu-control:checked~main .book-menu {
+  @media (max-width: $mobile-breakpoint) {
+    display: block;
+  }
 }
