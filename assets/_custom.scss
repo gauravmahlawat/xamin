@@ -990,6 +990,7 @@ section.block {
         color: #fff;
         margin-bottom: 0;
         z-index: 1;
+        cursor: pointer;
       }
     }
   }
@@ -1451,4 +1452,13 @@ section.block {
   width: 1px;
   word-wrap: normal !important;
   word-break: normal;
+}
+
+.test-series__block {
+  &.services--page {
+    .category-item {
+      width: 50%;
+      max-width: calc(50% - 10px);
+    }
+  }
 }

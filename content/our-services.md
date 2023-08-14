@@ -1,18 +1,12 @@
 ---
-title: 'About Us'
-type: docs
-description: 'Elevate your digital journey with Xamin.in. Expert career guidance & services in web development, SEO, content writing, and more. Reach new heights today.'
-keywords: 'Career guidance, web development, software development, SEO services, content writing, digital marketing, graphic design, frontend development, WordPress development, Shopify expertise, Drupal solutions, domain registration, hosting services, e-commerce platforms, DevOps solutions, online presence, digital strategies'
-draft: false
+title: "Services at Xamin.in"
+description: 'Discover comprehensive digital solutions at Xamin.in. From web development to SEO, content writing, and more – we bring your digital vision to life.'
+date: 2023-08-11
 ---
 
-# About Us - Xamin.in
+# Our Services
 
-Welcome to Xamin.in, your ultimate destination for comprehensive career guidance and top-notch services in the world of digital technology. We are a dedicated team of professionals passionate about helping individuals navigate their career paths and offering a wide array of services to empower businesses in the digital landscape.
-
----
-## Our Mission
-At Xamin.in, our mission is to empower individuals and businesses with the knowledge, skills, and tools they need to excel in the rapidly evolving digital world. Whether you're looking to kickstart your career or enhance your online presence, we are here to guide you every step of the way.
+{{< top-categories >}}
 
 ## Our Services
 We specialize in providing expert guidance and services across various domains within the digital realm. Our range of services includes:
@@ -44,5 +38,6 @@ With a team of over 10 skilled developers and professionals, we bring a wealth o
 
 At Xamin.in, we're more than just a service provider - we're your partners in achieving digital success. Join us on this exciting journey, and let's explore the boundless possibilities of the digital world together.
 
-## Get in Touch
+## Get In Touch
+
 To get in touch with us, you have a couple of options. You can visit our [Contact page](</contact>) on our website, where you'll find a form to fill out and submit your inquiry. Alternatively, you can directly email us at [info@xamin.in](<mailto:info@xamin.in>). We're always ready to assist you and answer any questions you may have.
