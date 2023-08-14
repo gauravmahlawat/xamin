@@ -1,5 +1,7 @@
 ---
+## Please do not add title more than 60 characters.
 title: "What is Web Development?"
+## Please do not add description more than 150 characters.
 description: 'Explore web development skills, career paths, and opportunities. Learn about coding languages, methodologies, and high-demand roles.'
 weight: 1
 keywords: 'Web development, coding skills, career paths, frontend languages, backend languages, agile methodology, waterfall methodology, web design, software engineering, job opportunities, salaries, tech industry, online presence.'

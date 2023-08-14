@@ -1,5 +1,7 @@
 ---
+## Please do not add title more than 60 characters.
 title: "How to get Internship or Job in software engineering"
+## Please do not add description more than 150 characters.
 description: 'Unlock software engineering success: guide through job search, resume, interviews & offers. Stand out, excel & start your journey now!'
 weight: 1
 keywords: 'Software engineering job search, Internship in software engineering,
