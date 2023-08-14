@@ -3,7 +3,7 @@
     {{ range .Site.RegularPages.ByDate.Reverse }}
     {{ $count := 0 }}
         {{ if and (eq (.Params.promoted | default "no") "yes") }}
-        {{ if lt $count 24 }}
+        {{ if lt $count 4 }}
         {{ $count = add $count 1 }}
 
             <div class="card-wrapper">
