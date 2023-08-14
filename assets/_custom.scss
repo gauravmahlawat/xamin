@@ -1051,6 +1051,18 @@ section.block {
   flex-wrap: wrap;
   gap: 1rem;
 
+  &.blog-page {
+    .card-wrapper {
+      width: 100%;
+      max-width: calc(33% - .75rem);
+
+      @media (max-width: $mobile-breakpoint) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
   .card-wrapper {
     width: 100%;
     max-width: calc(25% - .75rem);
@@ -1388,4 +1400,55 @@ section.block {
       }
     }
   }
+}
+
+.docs-page {
+  .book-toc {
+    display: none;
+  }
+
+  .book-menu {
+    display: none;
+
+    @media (max-width: $mobile-breakpoint) {
+      display: block;
+    }
+  }
+
+  .markdown {
+    h1 {
+      @media (max-width: $mobile-breakpoint) {
+        font-size: 36px;
+      }
+    }
+    h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+
+      @media (max-width: $mobile-breakpoint) {
+        padding-top: 20px;
+        font-size: 30px;
+        margin-bottom: 3px;
+      }
+
+      + p {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
 }

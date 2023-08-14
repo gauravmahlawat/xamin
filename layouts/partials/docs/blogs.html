@@ -13,6 +13,7 @@
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                 <p class="publish-date">{{ .Date.Format "January 2, 2006" }}</p>
                 <a href="{{ .Permalink }}" data-text="read more" class="btn btn--primary">
+                    <span class="screen-reader-text">Details</span>
                     <span class="button__inner-rollover-text">read more</span>
                 </a>
             </div>
@@ -25,6 +26,7 @@
         <span class="text">Check out our blog for free insights and updates on your field</span>
         <div>
             <a href="{{ "docs" | relURL }}" data-text="show me" class="btn btn--primary">
+                <span class="screen-reader-text">Details</span>
                 <span class="button__inner-rollover-text">show me</span>
             </a>
         </div>

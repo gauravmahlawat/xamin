@@ -14,7 +14,7 @@
 
     <script defer src="{{ "./footer.js" | relURL }}"></script>
   </head>
-  <body {{ if .IsHome }} class="homepage"{{ end }} dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+  <body {{ if eq .Type "docs" }}class="docs-page"{{ end }} {{ if .IsHome }} class="homepage"{{ end }} dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
     <input type="checkbox" class="hidden toggle" id="menu-control" />
     <input type="checkbox" class="hidden toggle" id="toc-control" />
     {{ partial "docs/desktop-header" . }}
