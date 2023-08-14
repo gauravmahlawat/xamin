@@ -12,6 +12,16 @@
     {{ end }}
     <meta name="robots" content="index, follow">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJQBWKV5T1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TJQBWKV5T1');
+    </script>
+
     <script defer src="{{ "./footer.js" | relURL }}"></script>
   </head>
   <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page"{{ end }} {{ end }} {{ if .IsHome }} class="homepage"{{ end }} dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
