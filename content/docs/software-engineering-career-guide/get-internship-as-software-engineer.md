@@ -39,7 +39,7 @@ tags: ["technology", "programming", software development, engineering]
 <!-- {{< blockquote author="Ray Dalio" quote="Principles are ways of successfully dealing with reality to get what you want out of life." >}} -->
 
 # The Ultimate Guide to Securing a Job or Internship in Software Engineering
-
+---
 ![internship](../../../images/internship.webp)
 
 

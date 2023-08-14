@@ -1,4 +1,5 @@
 ---
+## Please do not add title more than 60 characters.
 title: "Web Development Careers"
 description: 'Discover web development opportunities across industries. Learn job titles, career paths, essential skills, and growth prospects for a successful journey in coding.'
 weight: 1
@@ -15,6 +16,7 @@ date: '2023-08-14'
 
 # Explore Web Development Careers: Paths, Skills & Growth
 
+---
 ## Introduction
 
 Industries like hospitals, schools, tech giants, and nonprofits need web developers. Your programming skills matter across sectors. Discover job titles, paths, and growth prospects fueled by your Python and C++ expertise.

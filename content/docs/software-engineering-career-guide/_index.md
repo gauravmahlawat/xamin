@@ -1,5 +1,7 @@
 ---
+## Please do not add title more than 60 characters.
 title: "Software Engineering as a Career"
+## Please do not add description more than 150 characters.
 description: 'Dive into the dynamic world of software engineering. From coding to innovation, explore education, specialties, and growth opportunities.'
 weight: 1
 keywords: 'oftware engineering career, programming languages, skills, salaries, growth, software engineer vs developer, entry-level roles, math for software engineers'
@@ -14,7 +16,7 @@ date: '2023-08-14'
 
 
 # Software Engineering as Your Career Choice
-
+---
 ## Introduction
 
 Start your software engineering journey. Experts create various computer apps. High demand means many job options. Learn skills, career paths, specialties. Find jobs, salaries, and important industry groups.

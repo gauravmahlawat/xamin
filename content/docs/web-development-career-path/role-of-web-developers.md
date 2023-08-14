@@ -1,5 +1,7 @@
 ---
+## Please do not add title more than 60 characters.
 title: "Exploring the Role of Web Developers"
+## Please do not add description more than 150 characters.
 description: 'Uncover the responsibilities and tasks of a web developer. Explore the vital role these professionals play in creating and maintaining websites.'
 weight: 3
 keywords: 'web developer responsibilities, website creation, coding tasks, web development role, website maintenance'
@@ -14,7 +16,7 @@ date: '2023-08-14'
 
 
 # What Does a Web Developer Do?
-
+---
 ## Introduction
 
 When an application operates seamlessly, credit goes to the dedicated team of software engineers who tirelessly construct, evaluate, and refine it. Conversely, encountering a 404 error implies a glitch in the underlying code. Computer programming stands as a potent skill, with the development team often holding the reins of a company's success. But what exactly do developers engage in during their daily 9-5 routine?

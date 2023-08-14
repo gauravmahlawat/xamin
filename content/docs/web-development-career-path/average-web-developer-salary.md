@@ -16,7 +16,7 @@ date: '2023-08-14'
 
 
 # How Much Do Web Developers Make?
-
+---
 ## Introduction
 
 Web development is experiencing rapid expansion as companies, both large and small, seek skilled developers nationwide. This dynamic specialization encompasses tasks such as crafting user interactions on websites, establishing servers for seamless functionality, and coding for various mobile platforms. With its robust nature, web development stands as a highly lucrative field in nearly every state, offering substantial prospects for career advancement.
