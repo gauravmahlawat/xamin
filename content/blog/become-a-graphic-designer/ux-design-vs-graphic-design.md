@@ -25,8 +25,9 @@ In this article, we'll explore the disparities between UX designers and graphic 
 
 ---
 
-## Understanding Design Roles 
-Perusing job boards often reveals an array of roles suffixed with "designer," sometimes used interchangeably by employers. However, each role carries a distinct purpose within the product development process. 
+## Understanding Design Roles
+
+Perusing job boards often reveals an array of roles suffixed with "designer," sometimes used interchangeably by employers. However, each role carries a distinct purpose within the product development process.
 
 Here's a brief overview of four common design roles:
 
@@ -38,76 +39,82 @@ Here's a brief overview of four common design roles:
 
 **UX Designer:** UX designers emphasize the interaction between users and products, encompassing the user's emotional experience. Their scope extends beyond visuals to include information architecture and product prototyping.
 
-D## istinguishing UX Designers from Graphic Designers 
+D## istinguishing UX Designers from Graphic Designers
 The most significant disparity between UX and graphic design lies in their scope. While graphic designers focus on visuals, UX designers adopt a broader perspective, concentrating on user-product interaction. Graphic design typically constitutes a component of the comprehensive user experience. Further distinctions between the two roles include:
 
-* Graphic Designer vs. UX Designer
-* Graphic Designers create visual elements.
-* UX Designers design interactions.
-* Graphic Designers are brand-centric.
-* UX Designers are user-centric.
-* Graphic Designers specialize in creativity, color theory, etc.
-* UX Designers emphasize empathy, user research, prototyping, etc.
-* Graphic Designers use software like Adobe Photoshop.
-* UX Designers rely on tools like Balsamiq, Adobe XD, Figma, and Sketch.
-* Graphic Designers' average salary is $50,172 (US).
-* UX Designers' average salary is $77,200 (US).
+- Graphic Designer vs. UX Designer
+- Graphic Designers create visual elements.
+- UX Designers design interactions.
+- Graphic Designers are brand-centric.
+- UX Designers are user-centric.
+- Graphic Designers specialize in creativity, color theory, etc.
+- UX Designers emphasize empathy, user research, prototyping, etc.
+- Graphic Designers use software like Adobe Photoshop.
+- UX Designers rely on tools like Balsamiq, Adobe XD, Figma, and Sketch.
+- Graphic Designers' average salary is $50,172 (US).
+- UX Designers' average salary is $77,200 (US).
 
-## Design Type and Focus 
+## Design Type and Focus
+
 Graphic designers craft visual elements, while UX designers design interactions. The former calls for skills like color theory and typography, while the latter demands a multidisciplinary skill set involving design, research, architecture, and prototyping.
 
 ## Roles and Responsibilities of Graphic Designer and UX Designer
+
 The roles of UX and graphic designers lead them to engage in varying aspects of the product development lifecycle.
 
 #### Graphic Designers:
-* Visual Content Creation: Craft visually appealing designs, including logos, images, illustrations, and layouts, for both print and digital media.
-* Collaboration: Work closely with clients, art directors, and stakeholders to understand design requirements and deliver effective solutions.
-* Branding: Develop brand identities by selecting colors, typography, and images that align with the brand's message and values.
-* Visual Communication: Use design elements to convey messages and information to target audiences effectively.
-* Software Proficiency: Utilize design software such as Adobe Photoshop, Illustrator, and InDesign to create and manipulate visual content.
-* Print and Digital Design: Design materials for various mediums, such as brochures, posters, websites, social media, and more.
+
+- Visual Content Creation: Craft visually appealing designs, including logos, images, illustrations, and layouts, for both print and digital media.
+- Collaboration: Work closely with clients, art directors, and stakeholders to understand design requirements and deliver effective solutions.
+- Branding: Develop brand identities by selecting colors, typography, and images that align with the brand's message and values.
+- Visual Communication: Use design elements to convey messages and information to target audiences effectively.
+- Software Proficiency: Utilize design software such as Adobe Photoshop, Illustrator, and InDesign to create and manipulate visual content.
+- Print and Digital Design: Design materials for various mediums, such as brochures, posters, websites, social media, and more.
 
 #### UX Designers:
-* User-Centric Research: Identify user needs, behaviors, and pain points through extensive user research and analysis.
-* User Experience Design: Create user personas, journey maps, and wireframes to design intuitive and user-friendly interfaces.
-* Prototyping: Develop interactive prototypes and mockups to visualize and test user interactions with the product.
-* Usability Testing: Conduct user testing to evaluate the effectiveness and usability of designs, making iterative improvements.
-* Collaboration: Collaborate with cross-functional teams, including product managers, developers, and UI designers, to ensure consistent and cohesive user experiences.
-* Information Architecture: Organize content and navigation structures to enhance user flow and ease of interaction.
-* Accessibility: Ensure designs are accessible to all users, considering factors like usability for people with disabilities.
+
+- User-Centric Research: Identify user needs, behaviors, and pain points through extensive user research and analysis.
+- User Experience Design: Create user personas, journey maps, and wireframes to design intuitive and user-friendly interfaces.
+- Prototyping: Develop interactive prototypes and mockups to visualize and test user interactions with the product.
+- Usability Testing: Conduct user testing to evaluate the effectiveness and usability of designs, making iterative improvements.
+- Collaboration: Collaborate with cross-functional teams, including product managers, developers, and UI designers, to ensure consistent and cohesive user experiences.
+- Information Architecture: Organize content and navigation structures to enhance user flow and ease of interaction.
+- Accessibility: Ensure designs are accessible to all users, considering factors like usability for people with disabilities.
 
 While graphic designers focus on creating visually captivating content, UX designers prioritize enhancing user experiences by designing intuitive and user-centered interfaces. Both roles contribute to the overall success of a product or project by combining aesthetics and functionality.
 
-
 ## Tools and Software Utilization
+
 The tools and software employed by UX and graphic designers exhibit notable distinctions.
 
 **Graphic Designers:** In the design journey of graphic designers, various tools come into play, such as pen and paper, tablets with styluses, and computers—each utilized at different phases of the design process. While software preferences can vary from designer to designer and organization to organization, common choices encompass illustration applications, photo editing software, graphic vector editors, and layout editing tools.
 
 **UX Designers:** For UX designers, an assortment of tools caters to different requirements. These encompass specialized tools for low and high-fidelity prototyping, flow-charting, crafting surveys and questionnaires, wireframing, and conducting usability testing. The array of tools supports the multifaceted nature of UX design tasks, ensuring that designers can effectively tackle various aspects of the user experience.
 
-
 ## Educational Prerequisites to Become Graphic Designer or UX Designer
+
 The educational backgrounds of UX designers and graphic designers often diverge. Typically, graphic design positions require a bachelor's degree in graphic design or a related field.
 
 Conversely, due to the relatively recent emergence of UX as a field, established degree programs in UX are less prevalent. Instead, aspiring UX designers might pursue degrees in disciplines such as computer science, human-computer interaction, psychology, or design.
-In response to the burgeoning significance of UX, several universities have begun offering specialized programs in user experience. 
+In response to the burgeoning significance of UX, several universities have begun offering specialized programs in user experience.
 
 These programs may encompass various titles, including:
-* Interaction Design
-* Digital Technologies
-* Communication Design
-* Product Design
-* Multimedia Design
+
+- Interaction Design
+- Digital Technologies
+- Communication Design
+- Product Design
+- Multimedia Design
 
 If you're intrigued by these dynamic fields and are considering earning a degree, exploring these evolving educational pathways could be a promising step forward.
 
+## Choosing the Right Design Path
 
-## Choosing the Right Design Path 
 Your suitability for a design career hinges on your unique skills and interests. If you enjoy manipulating color palettes and fonts for visual aesthetics, graphic design might be appealing. Alternatively, if you're intrigued by human psychology and enjoy problem-solving through research, UX design could be a suitable choice.
 
 ## Transitioning from Graphic Designer to UX Designer
-If you possess experience in graphic design, there are compelling motivations to contemplate transitioning to UX design. But how can you successfully navigate this transition? The good news is that many of the visual design skills cultivated in graphic design can seamlessly transfer to the realm of UX. 
+
+If you possess experience in graphic design, there are compelling motivations to contemplate transitioning to UX design. But how can you successfully navigate this transition? The good news is that many of the visual design skills cultivated in graphic design can seamlessly transfer to the realm of UX.
 Notably, aesthetics play a significant role in UX. An Open University study conducted in 2005 discovered that visually pleasing elements are often perceived as more usable, even when there's no direct correlation between attractiveness and performance.
 
 With this in mind, you can focus on enhancing your expertise in various aspects of UX design, encompassing:
@@ -121,6 +128,7 @@ With this in mind, you can focus on enhancing your expertise in various aspects 
 By leveraging your existing skills and diligently honing new ones, you can make a successful transition from graphic design to the dynamic world of UX design.
 
 #### In a Nutshell
+
 In conclusion, discerning the differences between UX and graphic design is pivotal when choosing a career in design. Both paths offer unique opportunities and challenges, with UX design presenting a broader and more user-centric focus. Your choice should align with your inherent skills and aspirations, whether you opt for the visually oriented realm of graphic design or the research-driven world of UX design.
 
 ## FAQ

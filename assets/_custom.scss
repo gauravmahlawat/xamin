@@ -649,6 +649,10 @@ body:has(#menu-control:checked) {
   position: relative;
   top: 90px;
   line-height: 1;
+
+  @media (max-width: $mobile-breakpoint) {
+    top: 64px;
+  }
 }
 
 .banner img {
@@ -977,8 +981,9 @@ section.block {
     }
 
     @media (max-width: $mobile-breakpoint) {
-      max-width: 100%;
-      width: 100%;
+      max-width: 48%;
+      width: 48%;
+      height: 122px;
     }
 
     a {
@@ -1014,7 +1019,7 @@ section.block {
   margin-top: 44px;
 
   @media (max-width: $mobile-breakpoint) {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .service-item {
@@ -1022,8 +1027,8 @@ section.block {
     max-width: calc(25% - 0.75rem);
 
     @media (max-width: $mobile-breakpoint) {
-      max-width: 100%;
-      width: 100%;
+      max-width: 47.5%;
+      width: 47.5%;
     }
 
     img {
@@ -1359,7 +1364,12 @@ section.block {
   color: #000;
 
   @media (max-width: $mobile-breakpoint) {
-    display: none;
+    width: 100%;
+    min-width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
   }
 
   .knowmoretxt {
@@ -1418,7 +1428,6 @@ section.block {
 }
 
 .docs-page {
-
   .blog-tile {
     margin-top: 15px;
 
@@ -1599,4 +1608,41 @@ section.block {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+ul.menu-items-wrapper {
+  padding-left: 0;
+}
+
+.share-icon {
+  width: 24px;
+  height: 24px;
+}
+
+section.share-block-desktop {
+  margin: 20px 0;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+
+section.share-block-mobile {
+  margin: 20px 0;
+  @media (min-width: $mobile-breakpoint) {
+    display: none;
+  }
 }

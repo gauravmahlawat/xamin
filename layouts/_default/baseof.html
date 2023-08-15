@@ -70,6 +70,13 @@
         </label>
         {{ template "menu" . }}
         <!-- Left menu Content -->
+
+        <!-- Related articles section for all pages, except homepage and docs page -->
+        {{ if and (not .IsHome) (not (eq .Type "docs")) }}
+        <section class="block share-block-desktop">
+          {{ partial "docs/share-this" . }}
+        </section>
+        {{ end }}
       </div>
     </aside>
 
@@ -114,6 +121,13 @@
       </footer>
       {{ end }}
 
+      <!-- Related articles section for all pages, except homepage and docs page -->
+      {{ if and (not .IsHome) (not (eq .Type "docs")) }}
+      <section class="block share-block-mobile">
+        {{ partial "docs/share-this" . }}
+      </section>
+      {{ end }}
+
       {{ template "comments" . }}
       <!-- Comments block -->
 
@@ -126,13 +140,6 @@
       <div class="book-toc-content">
         {{ template "toc" . }}
         <!-- Table of Contents -->
-
-        <!-- Related articles section for all pages, except homepage and docs page -->
-        {{ if and (not .IsHome) (not (eq .Type "docs")) }}
-        <section class="block">
-          {{ partial "docs/share-this" . }}
-        </section>
-        {{ end }}
       </div>
     </aside>
     {{ end }}
