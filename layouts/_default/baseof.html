@@ -40,12 +40,14 @@
     gtag('config', 'G-TJQBWKV5T1');
   </script>
 
-  <script defer script-src="{{ " ./footer.js" | relURL }}"></script>
+  <script src="{{ "footer.js" | relURL }}"></script>
 </head>
 
 <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page" {{ end }} {{ end }} {{ if .IsHome }}
   class="homepage" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
+  <label class="hidden" for="menu-control">menu control</label>
   <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <label class="hidden" for="toc-control">Table of Contents</label>
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <header class="book-header container">
     {{ template "header" . }}
