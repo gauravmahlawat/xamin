@@ -1,33 +1,42 @@
 <h2>Featured blogs</h2>
 <div class="blog-tile__wrapper">
-
-    {{ $count := 0 }}
-    {{ range .Site.RegularPages.ByDate }}
-        {{ if and (eq (.Params.featured | default "no") "yes") (lt $count 3) }}
-            {{ $count = add $count 1 }}
-            <div class="blog-tile">
-                <div class="blog-tile__picture">
-                    <img src="{{ "images/blog.webp" | relURL }}" alt="blog">
-                </div>
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p class="publish-date">{{ .Date.Format "January 2, 2006" }}</p>
-                <a href="{{ .Permalink }}" data-text="read more" class="btn btn--primary">
-                    <span class="screen-reader-text">Details</span>
-                    <span class="button__inner-rollover-text">read more</span>
-                </a>
-            </div>
-        {{ end }}
-    {{ end }}
-
-
-    <div class="blog-tile moreblogsec blog-show-more">
-        <h3 class="title">Blog Posts</h3>
-        <span class="text">Check out our blog for free insights and updates on your field</span>
-        <div>
-            <a href="{{ "docs" | relURL }}" data-text="show me" class="btn btn--primary">
-                <span class="screen-reader-text">Details</span>
-                <span class="button__inner-rollover-text">show me</span>
-            </a>
+  {{ $count := 0 }}
+  {{ range .Site.RegularPages.ByDate }}
+    {{ if and (eq (.Params.featured | default "no") "yes") (lt $count 3) }}
+      {{ $count = add $count 1 }}
+      <div class="blog-tile">
+        <div class="blog-tile__picture">
+          <img src="{{ "images/blog.webp" | relURL }}" alt="blog" />
         </div>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="publish-date">{{ .Date.Format "January 2, 2006" }}</p>
+        <a
+          href="{{ .Permalink }}"
+          data-text="read more"
+          class="btn btn--primary"
+        >
+          <span class="screen-reader-text">Details</span>
+          <span class="button__inner-rollover-text">read more</span>
+        </a>
+      </div>
+    {{ end }}
+  {{ end }}
+
+
+  <div class="blog-tile moreblogsec blog-show-more">
+    <h3 class="title">Blog Posts</h3>
+    <span class="text"
+      >Check out our blog for free insights and updates on your field</span
+    >
+    <div>
+      <a
+        href="{{ "blog" | relURL }}"
+        data-text="show me"
+        class="btn btn--primary"
+      >
+        <span class="screen-reader-text">Details</span>
+        <span class="button__inner-rollover-text">show me</span>
+      </a>
     </div>
+  </div>
 </div>

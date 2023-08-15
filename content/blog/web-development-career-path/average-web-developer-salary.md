@@ -1,22 +1,33 @@
 ---
 ## Please do not add title more than 60 characters.
-title: "Web Developer Salaries & Trends"
+title: 'Web Developer Salaries & Trends'
 ## Please do not add description more than 150 characters.
 description: 'Discover web developer salaries, career trends, remote work insights, and valuable soft skills for success. Insights from Thinkful graduates.'
 weight: 4
 keywords: 'web developer salaries, career growth trends, remote work opportunities, Thinkful graduates, soft skills for developers, web development industry, coding proficiency, programming languages'
-tags: [web development, web developer salaries, career growth, remote work opportunities, Thinkful graduates, soft skills, programming languages, coding proficiency]
+tags:
+  [
+    web development,
+    web developer salaries,
+    career growth,
+    remote work opportunities,
+    Thinkful graduates,
+    soft skills,
+    programming languages,
+    coding proficiency,
+  ]
 featured: 'yes'
 promoted: 'yes'
 bookCollapseSection: false
-type: page
-author: "Gaurav"
+type: docs
+author: 'Gaurav'
 date: '2023-08-14'
 ---
 
-
 # How Much Do Web Developers Make?
+
 ---
+
 ## Introduction
 
 Web development is experiencing rapid expansion as companies, both large and small, seek skilled developers nationwide. This dynamic specialization encompasses tasks such as crafting user interactions on websites, establishing servers for seamless functionality, and coding for various mobile platforms. With its robust nature, web development stands as a highly lucrative field in nearly every state, offering substantial prospects for career advancement.
@@ -69,21 +80,22 @@ Here are five essential soft skills that infuse confidence into your entry into 
 
 As specialists in aiding individuals in transitioning to tech careers, we comprehend the challenges of embarking on a new path sans prior experience. Apart from honing these soft skills, every aspiring developer must also possess adeptness in diverse programming languages, coupled with impeccable coding prowess.
 
-
 ## Thinkful Web Developer Graduates: Earning Potential
 
-A remarkable 80% of Thinkful alumni have successfully secured employment within the field. These graduates also highlight a median salary increase of $20,000, coupled with an impressive 80% hiring rate—underscoring the tangible and immediate benefits of bootcamp programs. However, the inquiry extends to long-term achievements. 
+A remarkable 80% of Thinkful alumni have successfully secured employment within the field. These graduates also highlight a median salary increase of $20,000, coupled with an impressive 80% hiring rate—underscoring the tangible and immediate benefits of bootcamp programs. However, the inquiry extends to long-term achievements.
 
 In the trajectory of sustained success, Thinkful's software engineer graduates stand out. Their initial job after completing the program yields an average salary of $65,000. Remarkably, within a mere year of dedicated industry engagement, this figure escalates to an impressive $85,000.
 
-
-## FAQ 
+## FAQ
 
 #### 1. How can I enter the field of Web Development?
+
 Embarking on a career in web development involves acquiring proficiency in both front-end and back-end development. Key front-end skills include HTML, CSS, and JavaScript, while essential back-end skills encompass Ruby/Ruby on Rails and JavaScript/NodeJS.
 
 #### 2. Will obtaining a degree boost my earnings as a web developer?
+
 Certainly, obtaining a web development certificate or degree can provide a structured learning path. While many successful web developers are self-taught, certifications and degrees in programming and graphic design can enhance your prospects for better opportunities and higher compensation.
 
 #### 3. What is the earning potential for Thinkful graduates?
+
 Thinkful graduates demonstrate a strong earning potential. On average, entry-level web developer salaries for Thinkful graduates start at around $65,000. After gaining a year of experience in the field, these graduates typically earn approximately $85,000. Additionally, Thinkful alumni report a median increase of $20,000 in salary, showcasing an impressive 80% hiring rate in the competitive realm of web development.

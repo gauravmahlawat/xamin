@@ -24,9 +24,10 @@ tags: ["technology", "programming", software development, engineering]
 <!-- {{< blockquote author="Ray Dalio" quote="Principles are ways of successfully dealing with reality to get what you want out of life." >}} -->
 
 # The Ultimate Guide to Securing a Job or Internship in Software Engineering
----
-![internship](../../../images/internship.webp)
 
+---
+
+![internship](../../../images/internship.webp)
 
 Let's break down the process of searching for a job into four distinct stages:
 
@@ -41,10 +42,10 @@ Let's examine the tasks that need to be undertaken at each of these stages. It's
 
 Online Job Portals:
 
-* Indeed (indeed.com)
-* LinkedIn Jobs (linkedin.com/jobs)
-* Glassdoor (glassdoor.com)
-* Stack Overflow Jobs (stackoverflow.com/jobs)
+- Indeed (indeed.com)
+- LinkedIn Jobs (linkedin.com/jobs)
+- Glassdoor (glassdoor.com)
+- Stack Overflow Jobs (stackoverflow.com/jobs)
 
 ## Securing Shortlisting of Your Resume
 
@@ -52,23 +53,23 @@ Due to the high volume of applications for most job openings, companies cannot p
 
 Basic projects on your resume or a respectable 3-star rating on platforms like CodeChef can provide a foundation, though they might not set you apart significantly, as many other candidates might share these accomplishments. To truly stand out, consider the following strategies:
 
-* Exceptional Programming Contest Rankings:**
-   Attaining high ranks in programming contests can bolster your resume and demonstrate strong problem-solving skills.
+- Exceptional Programming Contest Rankings:\*\*
+  Attaining high ranks in programming contests can bolster your resume and demonstrate strong problem-solving skills.
 
-* Unique and Practical Projects:**
-   Presenting projects that offer innovative solutions to real-world problems, with code that's not readily available online, showcases your creativity and competence.
+- Unique and Practical Projects:\*\*
+  Presenting projects that offer innovative solutions to real-world problems, with code that's not readily available online, showcases your creativity and competence.
 
-* Valuable Open-Source Contributions:**
-   Active contributions to open-source projects highlight your collaboration skills and dedication to the coding community.
+- Valuable Open-Source Contributions:\*\*
+  Active contributions to open-source projects highlight your collaboration skills and dedication to the coding community.
 
-* Noteworthy Research Achievements:**
-   Highlighting substantial research work underscores your depth of knowledge and analytical capabilities.
+- Noteworthy Research Achievements:\*\*
+  Highlighting substantial research work underscores your depth of knowledge and analytical capabilities.
 
-* Educational Background:**
-   Although often beyond your control, graduating from a Tier-1 college can provide a competitive edge.
+- Educational Background:\*\*
+  Although often beyond your control, graduating from a Tier-1 college can provide a competitive edge.
 
-* Relevant Work Experience:**
-   Previous employment at a prominent tech firm can significantly enhance your resume, though this might not apply to fresh graduates.
+- Relevant Work Experience:\*\*
+  Previous employment at a prominent tech firm can significantly enhance your resume, though this might not apply to fresh graduates.
 
 Ensuring your resume adheres to industry best practices is crucial. This involves clear organization, concise descriptions, relevant keywords, and highlighting your accomplishments in a quantifiable manner. This optimized presentation maximizes your chances of getting shortlisted.
 
@@ -83,39 +84,48 @@ Skill Refinement through Practice: Dedication to rigorous practice is essential 
 ## Interview Preparation Tips for Software Engineers
 
 1. **Technical Proficiency:**
+
    - Brush up on foundational computer science concepts like data structures, algorithms, and object-oriented programming.
    - Grasp the technologies and tools highlighted in the job description.
    - Sharpen problem-solving skills through coding challenges on platforms such as LeetCode, HackerRank, and CodeSignal.
 
 2. **Effective Behavioral Responses:**
+
    - Craft concise, impactful answers to common interview questions on teamwork, challenges, and accomplishments.
    - Showcase adaptability, strong communication, and collaborative prowess.
 
 3. **Company Insights:**
+
    - Research the company extensively – products, services, culture, and recent developments.
    - Tailor your responses to reflect alignment with the company's values and objectives.
 
 4. **Simulate Real Interviews:**
+
    - Engage in mock technical and behavioral interviews with peers or mentors.
    - Welcome constructive feedback to refine your performance.
 
 5. **Showcase Projects and Portfolio:**
+
    - Articulate past projects, emphasizing problems tackled and innovative solutions.
    - Curate a portfolio showcasing coding finesse, GitHub contributions, and personal undertakings.
 
 6. **Inquisitive Mindset:**
+
    - Prepare thoughtful inquiries for interviewers about team dynamics, projects, and company ethos.
    - Exhibit genuine interest and curiosity.
 
 7. **Holistic Problem-Solving:**
+
    - Convey your step-by-step thought process while unraveling technical challenges.
    - Display your problem-solving approach, valued as much as the immediate solution.
 
 8. **Clear Communication:**
+
    - Practice distilling intricate technical concepts into coherent explanations.
    - Listen attentively to queries and seek clarity if needed.
 
 9. **Calm Demeanor, Positive Vibes:**
+
    - Keep your cool, despite interview jitters.
    - Cultivate positivity and composure for an impactful impression.
 
@@ -124,6 +134,5 @@ Skill Refinement through Practice: Dedication to rigorous practice is essential 
     - Stay steadfast, adapt, and embrace feedback as part of your learning journey.
 
 Remember, honing interview skills takes practice. Each interview is an opportunity to evolve. Stay committed, open to growth, and resilient on your quest for that ideal job or internship.
-
 
 If you find this guide useful, please share it with your friends and family.

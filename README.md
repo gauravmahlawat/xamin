@@ -17,3 +17,7 @@ yarn
 ```
 yarn lint:md
 ```
+
+```
+npm run lint:md
+```

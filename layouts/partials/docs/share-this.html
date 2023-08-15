@@ -1,41 +1,71 @@
-<h2 class="share-buttons--title">Share this article
-    <img class="share-icon" src="{{ "images/share.svg" | relURL }}" alt="share icon">
+<h2 class="share-buttons--title">
+  Share this article
+  <img
+    class="share-icon"
+    src="{{ "images/share.svg" | relURL }}"
+    alt="share icon"
+  />
 </h2>
 <div class="share-buttons">
-    <a class="fb-btn" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ "images/fb.svg" | relURL }}" alt="Facebook">
-    </a>
-    <a class="tw-btn" href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener noreferrer">
-        <img class="twitter" src="{{ "images/tw.svg" | relURL }}" alt="Twitter">
-    </a>
-    <a class="li-btn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary=&source=" target="_blank" rel="noopener noreferrer">
-        <img src="{{ "images/li.svg" | relURL }}" alt="LinkedIn">
-    </a>
-    <a class="wa-btn" href="https://wa.me/?text={{ .Title }} - {{ .Permalink }}" target="_blank" rel="noopener noreferrer">
-        <img class="twitter" src="{{ "images/wa.svg" | relURL }}" alt="WhatsApp">
-    </a>
-    <a class="mail-btn" href="mailto:?subject={{ .Title }}&body=Check out this article: {{ .Permalink }}" target="_blank" rel="noopener noreferrer">
-        <img class="mail" src="{{ "images/mail.svg" | relURL }}" alt="Email">
-    </a>
+  <a
+    class="fb-btn"
+    href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="{{ "images/fb.svg" | relURL }}" alt="Facebook" />
+  </a>
+  <a
+    class="tw-btn"
+    href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img class="twitter" src="{{ "images/tw.svg" | relURL }}" alt="Twitter" />
+  </a>
+  <a
+    class="li-btn"
+    href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary=&source="
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="{{ "images/li.svg" | relURL }}" alt="LinkedIn" />
+  </a>
+  <a
+    class="wa-btn"
+    href="https://wa.me/?text={{ .Title }} - {{ .Permalink }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img class="twitter" src="{{ "images/wa.svg" | relURL }}" alt="WhatsApp" />
+  </a>
+  <a
+    class="mail-btn"
+    href="mailto:?subject={{ .Title }}&body=Check out this article: {{ .Permalink }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img class="mail" src="{{ "images/mail.svg" | relURL }}" alt="Email" />
+  </a>
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const socialButtons = document.querySelectorAll('.share-buttons a');
-  
-      socialButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const socialMediaPlatform = button.getAttribute('class').split('-')[0]; // Extract platform from class
-          const socialMediaAction = 'social_share';
-          const socialMediaLabel = socialMediaPlatform;
-  
-          // Send the event to Google Analytics
-          gtag('event', socialMediaAction, {
-            event_category: 'social_share',
-            event_label: socialMediaLabel,
-            event_action: 'click',
-          });
+  document.addEventListener('DOMContentLoaded', function () {
+    const socialButtons = document.querySelectorAll('.share-buttons a');
+
+    socialButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        const socialMediaPlatform = button.getAttribute('class').split('-')[0]; // Extract platform from class
+        const socialMediaAction = 'social_share';
+        const socialMediaLabel = socialMediaPlatform;
+
+        // Send the event to Google Analytics
+        gtag('event', socialMediaAction, {
+          event_category: 'social_share',
+          event_label: socialMediaLabel,
+          event_action: 'click',
         });
       });
     });
+  });
 </script>

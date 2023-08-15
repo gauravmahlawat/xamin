@@ -3,7 +3,11 @@
     <div class="header__logo">
       <div class="header__logo-container">
         <a href="{{ "" | relURL }}">
-          <img width="250" src="{{ "svg/xamin.svg" | relURL }}" alt="Xamin Logo" />
+          <img
+            width="250"
+            src="{{ "svg/xamin.svg" | relURL }}"
+            alt="Xamin Logo"
+          />
         </a>
       </div>
 
@@ -14,13 +18,19 @@
       </div>
     </div>
 
-      <div class="menu-items__header">
-        <ul>
-          <li><a href="{{ "docs/software-engineering-career-guide/" | relURL }}">Software Engineering</a></li>
-          <li><a href="{{ "docs/become-an-seo-expert/" | relURL }}">SEO Expert</a></li>
-          <li><a href="{{ "our-services" | relURL }}">Services</a></li>
-          <li><a href="{{ "docs" | relURL }}">Blogs</a></li>
-        </ul>
-      </div>
+    <div class="menu-items__header">
+      <ul>
+        <li>
+          <a href="{{ "blog/software-engineering-career-guide/" | relURL }}"
+            >Software Engineering</a
+          >
+        </li>
+        <li>
+          <a href="{{ "blog/become-an-seo-expert/" | relURL }}">SEO Expert</a>
+        </li>
+        <li><a href="{{ "our-services" | relURL }}">Services</a></li>
+        <li><a href="{{ "blog" | relURL }}">Blogs</a></li>
+      </ul>
+    </div>
   </div>
 </header>

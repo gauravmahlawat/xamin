@@ -1,72 +1,87 @@
 <!DOCTYPE html>
-<html
-  lang="{{ default .Site.Language.Lang .Site.LanguageCode }}"
-  dir="{{ default "ltr" .Site.Language.LanguageDirection }}"
->
-  <head>
-    {{ partial "docs/html-head" . }}
-    {{ partial "docs/inject/head" . }}
-    <link rel="canonical" href="{{ .Permalink }}">
-    {{ if .Params.keywords }}
-      <meta name="keywords" content="{{ .Params.keywords }}">
-    {{ end }}
-    <meta name="robots" content="index, follow">
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode }}" dir="{{ default " ltr"
+  .Site.Language.LanguageDirection }}">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5317237265905981"
-     crossorigin="anonymous"></script>
+<head>
+  {{ partial "docs/html-head" . }}
+  {{ partial "docs/inject/head" . }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ if .Params.keywords }}
+  <meta name="keywords" content="{{ .Params.keywords }}">
+  {{ end }}
+  <meta name="robots" content="index, follow">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJQBWKV5T1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <meta http-equiv='Content-Security-Policy' content="default-src 'self';
+        script-src
+            'self'
+            'unsafe-inline'
+            https://www.googletagmanager.com
+            https://www.google-analytics.com;
+        img-src
+            'self'
+            https://www.google-analytics.com
+            https://stats.g.doubleclick.net;
+        frame-src
+            'self'
+            https://docs.google.com;
+        ">
 
-      gtag('config', 'G-TJQBWKV5T1');
-    </script>
+  <script async defer
+    script-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5317237265905981"
+    crossorigin="anonymous"></script>
 
-    <script defer src="{{ "./footer.js" | relURL }}"></script>
-  </head>
-  <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page"{{ end }} {{ end }} {{ if .IsHome }} class="homepage"{{ end }} dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
-    <input type="checkbox" class="hidden toggle" id="menu-control" />
-    <input type="checkbox" class="hidden toggle" id="toc-control" />
-    {{ partial "docs/desktop-header" . }}
-    <!-- {{ if .IsHome }} -->
-      {{ partial "docs/banner" . }}
-      {{ partial "docs/services" . }}
-    <!-- {{ end }} -->
-    <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
+  <!-- Google tag (gtag.js) -->
+  <script async defer script-src="https://www.googletagmanager.com/gtag/js?id=G-TJQBWKV5T1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      <aside class="book-menu">
-        <div class="book-menu-content">
-          <label for="menu-control" class="menu-close">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-              <path
-                fill="white"
-                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
-              />
-            </svg>
-          </label>
-          {{ template "menu" . }}
-          <!-- Left menu Content -->
-        </div>
-      </aside>
+    gtag('config', 'G-TJQBWKV5T1');
+  </script>
 
-      <div class="book-page">
-        <header class="book-header">
-          {{ template "header" . }}
-          <!-- Mobile layout header -->
-        </header>
-        {{ if not .IsHome }} 
+  <script defer script-src="{{ " ./footer.js" | relURL }}"></script>
+</head>
 
-        {{ partial "docs/inject/content-before" . }}
-        {{ template "main" . }}
-        <!-- Page Content -->
-        {{ partial "docs/inject/content-after" . }}
-        {{ end }}
+<body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page" {{ end }} {{ end }} {{ if .IsHome }}
+  class="homepage" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <header class="book-header container">
+    {{ template "header" . }}
+    <!-- Mobile layout header -->
+  </header>
+  {{ partial "docs/desktop-header" . }}
+  <!-- {{ if .IsHome }} -->
+  {{ partial "docs/banner" . }}
+  {{ partial "docs/services" . }}
+  <!-- {{ end }} -->
+  <main class="container mobile-padding-0 {{ if not .IsHome }} flex {{ end }}">
+
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        <label for="menu-control" class="menu-close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path fill="white"
+              d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+          </svg>
+        </label>
+        {{ template "menu" . }}
+        <!-- Left menu Content -->
+      </div>
+    </aside>
+
+    <div class="book-page">
+      {{ if not .IsHome }}
+
+      {{ partial "docs/inject/content-before" . }}
+      {{ template "main" . }}
+      <!-- Page Content -->
+      {{ partial "docs/inject/content-after" . }}
+      {{ end }}
 
       <!-- Test series block for homepage -->
-      {{ if .IsHome }} 
+      {{ if .IsHome }}
       <section class="block">
         {{ partial "docs/trending" . }}
       </section>
@@ -74,7 +89,7 @@
       <section class="block">
         {{ partial "docs/top-categories" . }}
       </section>
-    
+
       <section class="block">
         {{ partial "docs/test-series" . }}
       </section>
@@ -89,91 +104,92 @@
       {{ end }}
 
 
-        {{ if not .IsHome }} 
-        <footer class="book-footer">
-          {{ template "footer" . }}
-          <!-- Footer under page content -->
-          {{ partial "docs/inject/footer" . }}
-        </footer>
+      {{ if not .IsHome }}
+      <footer class="book-footer">
+        {{ template "footer" . }}
+        <!-- Footer under page content -->
+        {{ partial "docs/inject/footer" . }}
+      </footer>
+      {{ end }}
+
+      {{ template "comments" . }}
+      <!-- Comments block -->
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    {{ if not .IsHome }}
+    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        {{ template "toc" . }}
+        <!-- Table of Contents -->
+
+        <!-- Related articles section for all pages, except homepage and docs page -->
+        {{ if and (not .IsHome) (not (eq .Type "docs")) }}
+        <section class="block">
+          {{ partial "docs/share-this" . }}
+        </section>
         {{ end }}
-
-        {{ template "comments" . }}
-        <!-- Comments block -->
-
-        <label for="menu-control" class="hidden book-menu-overlay"></label>
       </div>
-
-      {{ if not .IsHome }} 
-      {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-        <aside class="book-toc">
-          <div class="book-toc-content">
-            {{ template "toc" . }}
-            <!-- Table of Contents -->
-
-            <!-- Related articles section for all pages, except homepage and docs page -->
-              {{ if and (not .IsHome) (not (eq .Type "docs")) }}
-              <section class="block">
-                {{ partial "docs/share-this" . }}
-              </section>
-            {{ end }}
-          </div>
-        </aside>
-      {{ end }}
-      {{ end }}
-    </main>
-
-    <!-- Related articles section for all pages, except homepage and docs page -->
-    {{ if and (not .IsHome) (not (eq .Type "docs")) }}
-      <section class="block">
-        {{ partial "docs/related-articles" . }}
-      </section>
+    </aside>
     {{ end }}
+    {{ end }}
+  </main>
+
+  <!-- Related articles section for all pages, except homepage and docs page -->
+  {{ if and (not .IsHome) (not (eq .Type "docs")) }}
+  <section class="block">
+    {{ partial "docs/related-articles" . }}
+  </section>
+  {{ end }}
 
 
-    <!--Footer bottom containing navigation links-->
-    <footer class="footer">
-      {{ partial "docs/footer-navigation" . }}
-    </footer>
+  <!--Footer bottom containing navigation links-->
+  <footer class="footer">
+    {{ partial "docs/footer-navigation" . }}
+  </footer>
 
-    {{ partial "docs/inject/body" . }}
-  </body>
+  {{ partial "docs/inject/body" . }}
+</body>
+
 </html>
 
 {{ define "menu" }}
-  {{ partial "docs/menu" . }}
+{{ partial "docs/menu" . }}
 {{ end }}
 
 {{ define "header" }}
-  {{ partial "docs/header" . }}
+{{ partial "docs/header" . }}
 
-  {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <aside class="hidden clearfix">
-      {{ template "toc" . }}
-    </aside>
-  {{ end }}
+{{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+<aside class="hidden clearfix">
+  {{ template "toc" . }}
+</aside>
+{{ end }}
 {{ end }}
 
 {{ define "footer" }}
-  {{ partial "docs/footer" . }}
+{{ partial "docs/footer" . }}
 {{ end }}
 
 {{ define "comments" }}
-  {{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
-    <div class="book-comments">
-      {{- partial "docs/comments" . -}}
-    </div>
-  {{ end }}
+{{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
+<div class="book-comments">
+  {{- partial "docs/comments" . -}}
+</div>
+{{ end }}
 {{ end }}
 
 {{ define "main" }}
-  {{ if .IsHome }}
-    <div class="desktop-banner">{{ partial "docs/banner" . }}</div>
-  {{ end }}
-  <article class="markdown">
-    {{- .Content -}}
-  </article>
+{{ if .IsHome }}
+<div class="desktop-banner">{{ partial "docs/banner" . }}</div>
+{{ end }}
+<article class="markdown">
+  {{- .Content -}}
+</article>
 {{ end }}
 
 {{ define "toc" }}
-  {{ partial "docs/toc" . }}
+{{ partial "docs/toc" . }}
 {{ end }}
