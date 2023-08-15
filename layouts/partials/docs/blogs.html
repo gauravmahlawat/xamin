@@ -1,11 +1,10 @@
 <h2>Featured blogs</h2>
 <div class="blog-tile__wrapper">
 
-    {{ range .Site.RegularPages.ByDate.Reverse }}
     {{ $count := 0 }}
-        {{ if and (eq (.Params.featured | default "no") "yes") }}
-        {{ if lt $count 3 }}
-        {{ $count = add $count 1 }}
+    {{ range .Site.RegularPages.ByDate }}
+        {{ if and (eq (.Params.featured | default "no") "yes") (lt $count 3) }}
+            {{ $count = add $count 1 }}
             <div class="blog-tile">
                 <div class="blog-tile__picture">
                     <img src="{{ "images/blog.webp" | relURL }}" alt="blog">
@@ -18,8 +17,8 @@
                 </a>
             </div>
         {{ end }}
-        {{ end }}
     {{ end }}
+
 
     <div class="blog-tile moreblogsec blog-show-more">
         <h3 class="title">Blog Posts</h3>

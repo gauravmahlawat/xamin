@@ -6,7 +6,7 @@ description: 'Discover web development, essential skills, and average salaries i
 weight: 5
 keywords: 'web developer career, web development skills, web development specializations, front-end development, back-end development, full-stack development, mobile development, web developer salary, coding skills, career progression'
 tags: [web developer career, web development skills, web development specializations, front-end development, back-end development, full-stack development, mobile development, web developer salary, coding skills, career progression, web development trends, entry-level web developer]
-featured: 'no'
+featured: 'yes'
 promoted: 'yes'
 bookCollapseSection: false
 type: page

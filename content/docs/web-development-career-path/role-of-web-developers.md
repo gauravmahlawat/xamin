@@ -6,7 +6,7 @@ description: 'Uncover the responsibilities and tasks of a web developer. Explore
 weight: 3
 keywords: 'web developer responsibilities, website creation, coding tasks, web development role, website maintenance'
 tags: [web developer, responsibilities, website creation, coding tasks, web development role, website maintenance]
-featured: 'no'
+featured: 'yes'
 promoted: 'yes'
 bookCollapseSection: false
 type: page

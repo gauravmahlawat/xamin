@@ -6,7 +6,7 @@ description: 'Discover web developer salaries, career trends, remote work insigh
 weight: 4
 keywords: 'web developer salaries, career growth trends, remote work opportunities, Thinkful graduates, soft skills for developers, web development industry, coding proficiency, programming languages'
 tags: [web development, web developer salaries, career growth, remote work opportunities, Thinkful graduates, soft skills, programming languages, coding proficiency]
-featured: 'no'
+featured: 'yes'
 promoted: 'yes'
 bookCollapseSection: false
 type: page

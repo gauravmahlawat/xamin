@@ -1,8 +1,8 @@
-<h2>Find Out What's Popular Right Now</h2>
-<div class="trending-card__wrapper">
+<h2 class="container related--title">Related Articles</h2>
+<div class="trending-card__wrapper container">
     {{ $count := 0 }}
     {{ range .Site.RegularPages.ByDate }}
-        {{ if and (eq (.Params.promoted | default "no") "yes") (lt $count 8) }}
+        {{ if and (eq (.Params.promoted | default "no") "yes") (lt $count 4) }}
             {{ $count = add $count 1 }}
 
             <div class="card-wrapper">

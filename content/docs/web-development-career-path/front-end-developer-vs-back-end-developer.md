@@ -6,7 +6,7 @@ description: 'Distinguish crucial roles in web development: front-end and back-e
 weight: 6
 keywords: 'web development, front-end, back-end, career prospects, specialties, web development roles, differentiate'
 tags: [web developer career, web development skills, web development specializations, front-end development, back-end development, full-stack development, mobile development, web developer salary, coding skills, career progression, web development trends, entry-level web developer]
-featured: 'no'
+featured: 'yes'
 promoted: 'yes'
 bookCollapseSection: false
 type: page

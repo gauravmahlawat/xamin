@@ -2,13 +2,11 @@
 title: "Services at Xamin.in"
 description: 'Discover comprehensive digital solutions at Xamin.in. From web development to SEO, content writing, and more – we bring your digital vision to life.'
 date: 2023-08-11
+type: docs
 ---
 
 # Our Services
 
-{{< top-categories >}}
-
-## Our Services
 We specialize in providing expert guidance and services across various domains within the digital realm. Our range of services includes:
 
 - **Career Guidance:** Our career guides are designed to help you make informed decisions in fields such as web development, software development, SEO, content writing, digital marketing, and graphic design. We believe in helping you uncover your true potential and find the path that aligns with your passions.
@@ -26,6 +24,8 @@ We specialize in providing expert guidance and services across various domains w
 - **Graphic Design:** Visual appeal is crucial in today's digital landscape. Our graphic designers create eye-catching visuals that capture the essence of your brand, ensuring a memorable user experience.
 
 - **DevOps:** Our dedicated DevOps team ensures seamless integration, deployment, and management of your digital projects. We focus on streamlining processes to enhance efficiency and collaboration.
+
+{{< top-categories >}}
 
 ## Our Team
 With a team of over 10 skilled developers and professionals, we bring a wealth of expertise to the table. Our developers are well-versed in various programming languages and frameworks, while our SEO and content specialists are adept at optimizing digital strategies for maximum impact.

@@ -8,28 +8,13 @@ keywords: 'Software engineering job search, Internship in software engineering,
 Job application strategies,
 Resume shortlisting tips,
 Standout software engineer resume,
-Programming contest rankings,
-Unique coding projects,
 Open-source contributions,
 Research achievements in programming,
-Interview preparation for software engineers,
-Technical proficiency in interviews,
-Behavioral interview responses,
-Company research for interviews,
-Mock technical interviews,
-Portfolio for software engineers,
-Problem-solving approach in interviews,
-Clear communication in technical interviews,
-Post-interview etiquette,
-Software engineering career tips,
-Landing a software development job,
-Software engineer interview tips,
-Guide to software engineering internships,
-Ultimate job search strategies in tech'
+Interview preparation for software engineers,'
 bookCollapseSection: false
 featured: 'yes'
 promoted: 'yes'
-page: true
+type: page
 author: "Gaurav"
 date: '2023-08-13'
 tags: ["technology", "programming", software development, engineering]
