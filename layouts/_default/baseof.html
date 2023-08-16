@@ -6,6 +6,7 @@
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
   <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico">
   {{ if .Params.keywords }}
   <meta name="keywords" content="{{ .Params.keywords }}">
   {{ end }}
