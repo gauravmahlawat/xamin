@@ -1646,3 +1646,12 @@ section.share-block-mobile {
     display: none;
   }
 }
+
+.book-menu-content {
+  height: 100%;
+
+  section.share-block-desktop {
+    position: sticky;
+    top: 20px;
+  }
+}
