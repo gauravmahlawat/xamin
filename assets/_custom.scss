@@ -1319,6 +1319,10 @@ section.block {
     margin-bottom: 0;
     a {
       color: #000;
+
+      &:visited {
+        color: #000;
+      }
     }
   }
 

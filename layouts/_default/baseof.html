@@ -52,6 +52,7 @@
           https://www.google.com/
           https://docs.google.com;
         ">
+        <script async defer src="{{ "footer.js" | relURL }}"></script>
 </head>
 
 <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page" {{ end }} {{ end }} {{ if .IsHome }}
@@ -172,8 +173,6 @@
 
   {{ partial "docs/inject/body" . }}
 </body>
-
-<script async defer src="{{ "footer.js" | relURL }}"></script>
 <script async defer
 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5317237265905981"
 crossorigin="anonymous"></script>

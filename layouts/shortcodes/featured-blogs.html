@@ -2,7 +2,7 @@
 <div class="blog-tile__wrapper">
   {{ $count := 0 }}
   {{ range .Site.RegularPages.ByDate }}
-    {{ if and (eq (.Params.featured | default "no") "yes") (lt $count 1000) }}
+    {{ if and (eq (.Params.featured | default "no") "yes") (lt $count 100) }}
       {{ $count = add $count 1 }}
       <div class="blog-tile">
         <div class="blog-tile__picture">
