@@ -1,7 +1,7 @@
 <div class="test-series__block">
   <h2>Trending Topics</h2>
   <div class="quiz-wrappar">
-    {{ range first 4 (sort .Data.Pages.ByDate "Date") }}
+    {{ range first 4 (sort .Data.Pages "Date") }}
       <div class="first_display">
         <div class="courseimgmain">
           {{ if .Title }}

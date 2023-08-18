@@ -52,11 +52,10 @@
           https://www.google.com/
           https://docs.google.com;
         ">
-        <script async defer src="{{ "footer.js" | relURL }}"></script>
 </head>
 
 <body {{ if not .IsHome }} {{ if eq .Type "docs" }}class="docs-page" {{ end }} {{ end }} {{ if .IsHome }}
-  class="homepage" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
+  class="homepage" {{ end }} {{ if eq .Type "contact" }} class="contact-page" {{ end }} dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
   <label class="hidden" for="menu-control">menu control</label>
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <label class="hidden" for="toc-control">Table of Contents</label>
@@ -158,6 +157,13 @@
     {{ end }}
   </main>
 
+    <!-- Our services on contact page -->
+    {{ if (eq .Type "contact") }}
+    <section class="block container margin-auto contact-services">
+      {{ partial "docs/top-categories" . }}
+    </section>
+    {{ end }}
+
   <!-- Related articles section for all pages, except homepage and docs page -->
   {{ if and (not .IsHome) (not (eq .Type "docs")) }}
   <section class="block">
@@ -173,6 +179,7 @@
 
   {{ partial "docs/inject/body" . }}
 </body>
+<script defer src="{{ "footer.js" | relURL }}"></script>
 <script async defer
 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5317237265905981"
 crossorigin="anonymous"></script>

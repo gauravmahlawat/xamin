@@ -38,3 +38,8 @@ At Xamin, we believe that exceptional development forms the backbone of every su
 
 © 2023 Xamin. All rights reserved.
 
+
+{{< services >}}
+
+
+{{< blogs >}}

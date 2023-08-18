@@ -37,3 +37,9 @@ In the vast expanse of the digital universe, ensuring your software runs flawles
 [Engage with Our Quality Engineering Experts Today](https://www.xamin.in/contact)
 
 © 2023 Xamin. All rights reserved.
+
+
+{{< services >}}
+
+
+{{< blogs >}}

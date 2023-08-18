@@ -2,6 +2,7 @@
 title: "Contact Us"
 description: "Connect with Xamin.in for tailored digital solutions. Reach out for career guidance, web development, SEO, content writing, and more. Let's transform your digital journey."
 date: 2023-08-11
+type: contact
 ---
 
 # Contact Us

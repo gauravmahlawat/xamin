@@ -34,3 +34,9 @@ In today's hyper-connected digital landscape, creating immersive and intuitive e
 [Connect with Our Experience Design Maestros Today](https://www.xamin.in/contact)
 
 © 2023 Xamin. All rights reserved.
+
+
+{{< services >}}
+
+
+{{< blogs >}}

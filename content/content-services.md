@@ -48,3 +48,7 @@ In today's digital age, content remains king. At Xamin, we understand the value 
 © 2023 Xamin. All rights reserved.
 
 
+{{< services >}}
+
+
+{{< blogs >}}

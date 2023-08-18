@@ -1,4 +1,14 @@
-<h2 class="container related--title">Related Articles</h2>
+<div class="justify-between align-center d-flex container related--articles">
+    <h2><b>Related Articles</b></h2>
+    <a
+        class="btn btn--primary"
+        href="{{ "blog" | relURL }}"
+        data-text="VIEW ALL"
+    >
+        <span class="button__inner-rollover-text">VIEW ALL</span>
+    </a>
+</div>
+
 <div class="trending-card__wrapper container">
   {{ $count := 0 }}
   {{ range .Site.RegularPages.ByDate }}
