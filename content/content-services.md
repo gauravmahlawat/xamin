@@ -1,6 +1,6 @@
 ---
-title: "Xamin Development Services | Empowering Digital Innovations"
-description: "Elevate your digital presence with Xamin's exceptional development services. Our team specializes in Drupal, WordPress, and Shopify development, delivering bespoke solutions with cutting-edge technologies"
+title: "Xamin Content Services - Tailored Writing That Amplifies Your Brand"
+description: "Craft impactful narratives with Xamin. From SEO content to video scripts, we pen words that resonate and engage. Elevate your brand's voice today!"
 type: docs
 ---
 

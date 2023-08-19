@@ -1,6 +1,6 @@
 ---
-title: "Xamin Services | Elevate Your Digital Journey with Xamin"
-description: "Comprehensive digital solutions for content, quality engineering, experience design, and development. Let Xamin empower your brand's digital transformation"
+title: "Xamin Services: Content Writing, Quality Engineering, Design & Development"
+description: "Explore Xamin's suite of premier services, from compelling content writing and quality engineering to experience design and robust development. Propel your brand into the digital future with our expert-driven, client-centric solutions."
 date: 2023-08-11
 type: docs
 ---
@@ -17,25 +17,37 @@ In today's digitally driven world, a comprehensive approach to building and opti
 
    *Enrich Your Brand Voice*
    Crafting compelling narratives that resonate. Our team of dedicated writers curate content that not only speaks to your audience but also amplifies your brand's message. Dive into our diverse content offerings, including blog posts, web content, and video scripts to elevate your digital presence.
+   
    [Explore Content Writing Services](</content-services>)
 
 2. **Quality Engineering**
 
    *Ensuring Excellence at Every Step*
    Quality isn't just an end goal – it's an ongoing process. From agile testing to specialized Drupal performance checks, our quality engineering suite ensures that every digital touchpoint is seamless, functional, and user-friendly.
+
    [Discover Our Quality Engineering Solutions](</quality-engineering-services>)
 
 3. **Experience Design**
 
    *Creating Immersive Digital Experiences*
    Every interaction matters. Our experience design team specializes in blending user research with striking digital designs. From understanding user insights to fostering product growth, we aim to create digital experiences that captivate and convert.
+
    [Unveil Our Experience Design Process](</experience-design-services>)
 
 4. **Development Services**
 
    *Bridging Vision with Virtual Reality*
    Turn your digital aspirations into dynamic realities. Whether it's Drupal, WordPress, Shopify, or cutting-edge frontend design, our development gurus craft solutions that are not only functional but also aesthetically unparalleled.
+
    [Engage with Our Development Services](</development-services>)
+
+5. **Website Health Check and Optimization Services**
+
+   *Prioritizing Performance at Every Pixel*
+   In the bustling digital landscape, a website's health determines its success. It's not merely about being live – it's about thriving with optimal functionality. From broken link resolutions to meta tag perfection, our meticulous Website Health Check and Optimization Service ensures that your online domain stands out as a beacon of reliability, speed, and user-centricity.
+
+
+   [Uncover Our Health Check & Optimization Solutions](</improve-website-performance/>)
 
 ## Why Choose Xamin?
 

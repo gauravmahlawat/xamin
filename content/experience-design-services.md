@@ -1,6 +1,6 @@
 ---
-title: "Xamin Experience Design Services | Crafting Memorable Digital Journeys"
-description: "Elevate your brand with Xamin's user-centric Experience Design Services. From research to cross-platform expertise, we create resonating digital journeys."
+title: "Xamin Experience Design - Crafting Immersive Digital Journeys"
+description: "Elevate your brand with Xamin's tailored Experience Design. From user insights to digital branding, create captivating digital interactions. Connect today!"
 type: docs
 ---
 

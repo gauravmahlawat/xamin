@@ -1,6 +1,6 @@
 ---
-title: "Xamin Content Writing Services | Crafting Words that Resonate"
-description: "Elevate your brand's voice with Xamin's specialized content writing services. SEO optimization, engaging blog posts, compelling website content, and more"
+title: "Xamin Quality Engineering - Ensuring Flawless Digital Performance"
+description: "Achieve digital precision with Xamin's quality assurance. From Agile to Performance Testing, we guarantee impeccable software experiences. Explore now!"
 type: docs
 ---
 
