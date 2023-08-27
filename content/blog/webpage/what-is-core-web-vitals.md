@@ -1,6 +1,6 @@
 ---
 ## Please do not add title more than 60 characters.
-title: 'Improve User Experience with Expert Core Web Vitals Optimization'
+title: 'Improve User Experience with Expert Core Web Vitals
 description: 'Deep dive into Core Web Vitals seo, impact on ranking website on google	and improve google ranking with CLS and FID, CLS'
 weight: 1
 keywords: 'web development, career paths, skills, growth opportunities, job titles, coding, programmer, developer, front end, back end, full stack, software architect, responsibilities, skills for web developers, growth in web development, job outlook, starting a career, FAQs, salary in India.'
@@ -33,39 +33,6 @@ date: '2023-08-27'
 
 # Enhancing Website Performance: A Comprehensive Guide to Core Web Vitals Optimization
 
----
-
-## Introduct---
-## Please do not add title more than 60 characters.
-title: 'Improve WordPress Performance stesp: 20 Common Problems fix'
-description: 'How to fix WordPress performance problems? We share 20 common issues, plus solve them and speed up your WordPress site today.'
-weight: 2
-keywords: 'web development, career paths, skills, growth opportunities, job titles, coding, programmer, developer, front end, back end, full stack, software architect, responsibilities, skills for web developers, growth in web development, job outlook, starting a career, FAQs, salary in India.'
-tags:
-  [
-    web development careers,
-    job titles,
-    skills,
-    growth,
-    programmer,
-    developer,
-    full stack engineer,
-    software architect,
-    responsibilities,
-    communication,
-    logical thinking,
-    creativity,
-    job outlook,
-    starting a career,
-    salary,
-    India.,
-  ]
-featured: 'yes'
-promoted: 'yes'
-bookCollapseSection: false
-type: page
-author: 'Gaurav'
-date: '2023-08-27'
 ---
 
 # 20 Solutions for Improving WordPress Performance
