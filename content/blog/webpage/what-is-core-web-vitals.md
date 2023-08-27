@@ -1,6 +1,6 @@
 ---
 ## Please do not add title more than 60 characters.
-title: 'Improve User Experience with Expert Core Web Vitals
+title: 'Improve User Experience with Expert Core Web Vitals'
 description: 'Deep dive into Core Web Vitals seo, impact on ranking website on google	and improve google ranking with CLS and FID, CLS'
 weight: 1
 keywords: 'web development, career paths, skills, growth opportunities, job titles, coding, programmer, developer, front end, back end, full stack, software architect, responsibilities, skills for web developers, growth in web development, job outlook, starting a career, FAQs, salary in India.'

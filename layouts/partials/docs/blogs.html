@@ -1,5 +1,5 @@
 <div class="justify-between align-center d-flex">
-  <h2>Featured blogs</h2>
+  <h2>Featured blogss</h2>
   <a
     class="btn btn--primary"
     href="{{ "featured-blogs/" | relURL }}"
@@ -11,7 +11,7 @@
 
 <div class="blog-tile__wrapper">
   {{ $count := 0 }}
-  {{ range .Site.RegularPages.ByDate }}
+  {{ range .Site.RegularPages.ByDate.Reverse }}
     {{ if and (eq (.Params.featured | default "no") "yes") (lt $count 4) }}
       {{ $count = add $count 1 }}
       <div class="blog-tile">
