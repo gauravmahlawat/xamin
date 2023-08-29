@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^xamin\.in [NC]
+RewriteRule ^(.*)$ https://www.xamin.in/$1 [L,R=301]
