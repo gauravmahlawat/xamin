@@ -1677,3 +1677,7 @@ section.contact-services {
     margin-top: 0;
   }
 }
+
+.markdown pre {
+  max-width: calc(100vw - 30px);
+}
